@@ -13,7 +13,7 @@ public class Employee {
     private String name;
 
     @Column(name = "age")
-    private int age;
+    private String age;
 
     @Column(name = "contact")
     private String contact;
@@ -28,7 +28,7 @@ public class Employee {
         super();
     }
 
-    public Employee(int id, String name, int age, String contact, String depart, String salary) {
+    public Employee(int id, String name, String age, String contact, String depart, String salary) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -53,11 +53,11 @@ public class Employee {
         this.name = name;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
